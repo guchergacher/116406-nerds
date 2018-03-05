@@ -6,10 +6,10 @@
   </head>
   <body>
     <header class="header">
+      <a class="header__logo-link">
+        <img src="img/logo.png" width="160" height="70" alt="Логотип Нёрдс">
+      </a>
       <nav class="header__nav nav">
-        <a class="nav__logo-link">
-          <img src="img/logo.png" width="160" height="70" alt="Логотип Нёрдс">
-        </a>
         <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link" href="studio.html">Студия</a>
@@ -23,11 +23,13 @@
           <li class="nav__item">
             <a class="nav__link" href="contacts.html">Контакты</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link nav__link--card" href="card.html">Корзина</a>
-          </li>
         </ul>
       </nav>
+      <ul class="header__user-nav user-nav">
+        <li class="user-nav__item">
+          <a class="user-nav__link" href="card.html">Корзина</a>
+        </li>
+      </ul>
     </header>
     <main class="content">
       <h1 class="visually-hidden">Веб студиа Нёрдс</h1>
@@ -78,44 +80,51 @@
       </section>
       <section class="aboutus">
         <h2 class="visually-hidden">О нас</h2>
-        <b class="aboutus__slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
-        <p class="aboutus__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <b class="aboutus__orders">Выполняем заказы на разработку:</b>
-        <ul class="aboutus__orders-list">
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для iOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
-        <b class="aboutus__history">с 2004 года Любим точность во всем:</b>
-        <table class="aboutus__table">
-          <tr>
-            <td>146%</td>
-            <td>100%</td>
-            <td>50%</td>
-          </tr>
-          <tr>
-            <td>Уровень самоотдачи</td>
-            <td>Соблюдение  сроков</td>
-            <td>Минимальная предоплата</td>
-          </tr>
-        </table>
-        <ul class="aboutus__works-list">
-          <li class="aboutus__works-item">
+        <div class="aboutus__info">
+          <b class="aboutus__slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+          <p class="aboutus__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <b class="aboutus__orders">Выполняем заказы на разработку:</b>
+          <ul class="aboutus__orders-list">
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="aboutus__info">
+          <b class="aboutus__history">с 2004 года Любим точность во всем:</b>
+          <table class="aboutus__table">
+            <tr>
+              <td>146%</td>
+              <td>100%</td>
+              <td>50%</td>
+            </tr>
+            <tr>
+              <td>Уровень самоотдачи</td>
+              <td>Соблюдение  сроков</td>
+              <td>Минимальная предоплата</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section class="our-works">
+        <h2 class="visually-hidden">Наши работы</h2>
+        <ul class="our-works__list">
+          <li class="our-works__item">
             <a href="catalog-item.html">
               <img src="img/academy.png" width="300" height="184" alt="Логотип Академии">
             </a>
           <li>
-          <li class="aboutus__works-item">
+          <li class="our-works__item">
             <a href="catalog-item.html">
               <img src="img/borodinsky.png" width="300" height="184" alt="Логотип Барбершопа">
             </a>
           <li>
-          <li class="aboutus__works-item">
+          <li class="our-works__item">
             <a href="catalog-item.html">
               <img src="img/pink.png" width="300" height="184" alt="Логотип Пинк">
             </a>
           <li>
-          <li class="aboutus__works-item">
+          <li class="our-works__item">
             <a href="catalog-item.html">
               <img src="img/mishka.png" width="300" height="184" alt="Логотип Мишка">
             </a>
