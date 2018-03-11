@@ -35,6 +35,71 @@
       <h1 class="content__title">Магазин готовых шаблонов</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтры</h2>
+        <form class="filters__form form-filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="form-filter__group">
+            <legend class="form-filter__title">Стоимость:</legend>
+            <div class="form-filter__slider interval-slider">
+              <div class="interval-slider__range">
+                <div class="interval-slider__range-active"></div>
+              </div>
+              <div class="interval-slider__group interval-slider__group--left">
+                <label for="range-left" aria-label="Левая кнопка ползунка"></label>
+                <div class="interval-slider__wrapper">
+                  от <input id="range-left" type="text" name="range-left" value="0">
+                </div>
+              </div>
+              <div class="interval-slider__group interval-slider__group--right">
+                <label for="range-right" aria-label="Правая кнопка ползунка"></label>
+                <div class="interval-slider__wrapper">
+                  до <input id="range-right" type="text" name="range-right" value="15 000">
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="form-filter__group">
+            <legend class="form-filter__title">Сетка:</legend>
+            <ul>
+              <li class="filters__option">
+                <input class="visually-hidden form-filter__field form-filter__field--radio" id="filters-adaptive" type="radio" name="product-group" value="adaptive" checked>
+                <label for="filters-adaptive">Адаптивная</label>
+              </li>
+              <li class="filters__option">
+                <input class="visually-hidden form-filter__field form-filter__field--radio" id="filters-fixed" type="radio" name="product-group" value="fixed">
+                <label for="filters-fixed">Фиксированная</label>
+              </li>
+              <li class="filters__option">
+                <input class="visually-hidden form-filter__field form-filter__field--radio" id="filters-rubber" type="radio" name="product-group" value="rubber">
+                <label for="filters-rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-filter__group">
+            <legend class="form-filter__title">Особенности:</legend>
+            <ul>
+              <li class="filters__option">
+                <input class="visually-hidden form-filter__field form-filter__field--checkbox" id="filters-slayder" type="checkbox" name="slayder" checked>
+                <label for="filters-slayder">Cлайдер</label>
+              </li>
+              <li class="filters__option">
+                <input class="visually-hidden form-filter__field form-filter__field--checkbox" id="filters-advantage" type="checkbox" name="advantage">
+                <label for="filters-advantage">Блок преймуществ</label>
+              </li>
+              <li class="filters__option">
+                <input class="visually-hidden form-filter__field form-filter__field--checkbox" id="filters-news" type="checkbox" name="news" checked>
+                <label for="filters-news">Новости</label>
+              </li>
+              <li class="filters__option">
+                <input class="visually-hidden form-filter__field form-filter__field--checkbox" id="filters-gallery" type="checkbox" name="gallery">
+                <label for="filters-gallery">Галерея</label>
+              </li>
+              <li class="filters__option">
+                <input class="visually-hidden form-filter__field form-filter__field--checkbox" id="filters-basket" type="checkbox" name="basket">
+                <label for="filters-basket">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="form-filter__button button" type="submit">Показать</buton>
+        </form>
       </section>
       <section class="sorting">
         <h2 class="sorting__tile">Сортировать</h2>
@@ -131,9 +196,9 @@
       <section class="social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="social__buttons social">
-          <li class="social__item"><a class="social__link social__link--vk" href="#" target="_blank">vk</a></li>
-          <li class="social__item"><a class="social__link social__link--fb" href="#" target="_blank">facebook</a></li>
-          <li class="social__item"><a class="social__link social__link--inst" href="#" target="_blank">instagramm</a></li>
+          <li class="social__item"><a class="social__link social__link--vk" href="#" target="_blank" aria-label="Вконтакте"></a></li>
+          <li class="social__item"><a class="social__link social__link--fb" href="#" target="_blank" aria-label="Facebook"></a></li>
+          <li class="social__item"><a class="social__link social__link--inst" href="#" target="_blank" aria-label="Instagramm"></a></li>
         </ul>
         <div class="social__text">
           <b>Давайте дружить, это выгодно!</b>
@@ -141,8 +206,26 @@
         </div>
       </section>
     </footer>
-    <div class="modal">
+    <div class="modal" tabindex="-1">
       <h2 class="modal__title">Напишите нам</h2>
+      <form class="modal__form modal-form" method="post" action="https://echo.htmlacademy.ru">
+        <ul class="modal-form__list">
+          <li>
+            <label class="modal-form__label" for="user-name">Ваше имя:</label>
+            <input class="modal-form__field" id="user-name" type="text" name="user-name" placeholder="Имя Фамилия" required>
+          </li>
+          <li>
+            <label class="modal-form__label" for="user-mail">Ваш e-mail:</label>
+            <input class="modal-form__field" id="user-mail" type="email" name="user-mail" placeholder="email@example.com" required>
+          </li>
+          <li>
+            <label class="modal-form__label" for="user-text">Текст письма:</label>
+            <textarea class="modal-form__field" id="user-text" name="user-text" rows="3" placeholder="В свободной форме"></textarea>
+          </li>
+        </ul>
+        <button class="modal-form__button" type="submit">Отправить</button>
+      </form>
+      <button class="modal__button" type="button" aria-label="Закрыть окно"></button>
     </div>
   </body>
 </html>

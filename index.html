@@ -53,9 +53,9 @@
           </li>
         </ul>
         <div class="slider__buttons">
-          <button class="slider__button-control slider__button-control--current" type="button">1</button>
-          <button class="slider__button-control" type="button">2</button>
-          <button class="slider__button-control" type="button">3</button>
+          <button class="slider__button-control slider__button-control--current" type="button" aria-lable="Слайд 1"></button>
+          <button class="slider__button-control" type="button" aria-lable="Слайд 2"></button>
+          <button class="slider__button-control" type="button" aria-lable="Слайд 3"></button>
         </div>
       </section>
       <section class="products">
@@ -146,9 +146,9 @@
       <section class="social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="social__buttons social">
-          <li class="social__item"><a class="social__link social__link--vk" href="#" target="_blank">vk</a></li>
-          <li class="social__item"><a class="social__link social__link--fb" href="#" target="_blank">facebook</a></li>
-          <li class="social__item"><a class="social__link social__link--inst" href="#" target="_blank">instagramm</a></li>
+          <li class="social__item"><a class="social__link social__link--vk" href="#" target="_blank" aria-label="Вконтакте"></a></li>
+          <li class="social__item"><a class="social__link social__link--fb" href="#" target="_blank" aria-label="Facebook"></a></li>
+          <li class="social__item"><a class="social__link social__link--inst" href="#" target="_blank" aria-label="Instagramm"></a></li>
         </ul>
         <div class="social__text">
           <b>Давайте дружить, это выгодно!</b>
@@ -156,8 +156,26 @@
         </div>
       </section>
     </footer>
-    <div class="modal">
+    <div class="modal" tabindex="-1">
       <h2 class="modal__title">Напишите нам</h2>
+      <form class="modal__form modal-form" method="post" action="https://echo.htmlacademy.ru">
+        <ul class="modal-form__list">
+          <li>
+            <label class="modal-form__label" for="user-name">Ваше имя:</label>
+            <input class="modal-form__field" id="user-name" type="text" name="user-name" placeholder="Имя Фамилия" required>
+          </li>
+          <li>
+            <label class="modal-form__label" for="user-mail">Ваш e-mail:</label>
+            <input class="modal-form__field" id="user-mail" type="email" name="user-mail" placeholder="email@example.com" required>
+          </li>
+          <li>
+            <label class="modal-form__label" for="user-text">Текст письма:</label>
+            <textarea class="modal-form__field" id="user-text" name="user-text" rows="3" placeholder="В свободной форме"></textarea>
+          </li>
+        </ul>
+        <button class="modal-form__button" type="submit">Отправить</button>
+      </form>
+      <button class="modal__button" type="button" aria-label="Закрыть окно"></button>
     </div>
   </body>
 </html>
