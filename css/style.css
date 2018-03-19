@@ -1,0 +1,657 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto.woff2") format("woff2"),
+       url("../fonts/roboto.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/robotomedium.woff2") format("woff2"),
+       url("../fonts/robotomedium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/robotobold.woff2") format("woff2"),
+       url("../fonts/robotobold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283136;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.visually-hidden:not(:focus):not(:active),
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.list-unstyled {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-link {
+  border-bottom: 2px solid transparent;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.nav-link:not(.nav-link--current):hover {
+  color: #fb565a;
+  cursor: pointer;
+}
+
+.nav-link:not(.nav-link--current):active {
+  color: #bcbcbc;
+}
+
+.nav-link--current {
+  border-bottom-color: #fb565a;
+}
+
+.button {
+  border: none;
+  border-top: 3px solid transparent;
+  border-radius: 3px;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* Шапка */
+
+.header {
+  background-color: #eeeeee;
+}
+
+.header__logo-link:hover {
+  opacity: 0.9;
+}
+
+.header__logo-link:active {
+  opacity: 0.3;
+}
+
+/* Контент */
+
+.content__title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: #000000;
+  background-color: #eeeeee;
+  text-align: center;
+}
+
+/* Слайдер */
+
+.slider {
+  background-color: #eeeeee;
+}
+
+.slider__item {
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 760px auto;
+}
+
+.slider__item--bg-1 {
+  background-image: url("../img/nerds-index-slide1.png");
+}
+
+.slider__item--bg-2 {
+  background-image: url("../img/nerds-index-slide2.png");
+}
+
+.slider__item--bg-3 {
+  background-image: url("../img/nerds-index-slide3.png");
+}
+
+.slider__title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.slider__button {
+  background-color: #fb565a;
+}
+
+.slider__button:hover {
+  background-color: #e74246;
+}
+
+.slider__button:active {
+  background-color: #d7373b;
+  border-top-color: #c13135;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.slider__button-control {
+  display: inline-block;
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  background-color: #ffffff;
+  border: 5px solid #ffffff;
+  border-radius: 100%;
+}
+
+.slider__button-control--current {
+  box-shadow: inset 0 0 0 2px #c1c1c1;
+}
+
+.slider__button-control:not(.slider__button-control--current):hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.slider__button-control:not(.slider__button-control--current):active {
+  opacity: 0.3;
+}
+
+/* Продукты */
+
+.products {
+  border-bottom: 2px solid #eeeeee;
+}
+
+.products__item::before {
+  content: "";
+  display: block;
+  height: 146px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 300px auto;
+}
+
+.products__item--bg-1::before {
+  background-color: #fb565a;
+  background-image: url("../img/illustration-1.png");
+}
+
+.products__item--bg-1 .product__button {
+  background-color: #fb565a;
+}
+
+.products__item--bg-1 .product__button:hover {
+  background-color: #e74246;
+}
+
+.products__item--bg-1 .product__button:active {
+  background-color: #d7373b;
+  border-top-color: #c13135;
+}
+
+.products__item--bg-2::before {
+  background-color: #00ca74;
+  background-image: url("../img/illustration-2.png");
+}
+
+.products__item--bg-2 .product__button {
+  background-color: #00ca74;
+}
+
+.products__item--bg-2 .product__button:hover {
+  background-color: #00bc6c;
+}
+
+.products__item--bg-2 .product__button:active {
+  background-color: #00aa62;
+  border-top-color: #009958;
+}
+
+.products__item--bg-3::before {
+  background-color: #efc849;
+  background-image: url("../img/illustration-3.png");
+}
+
+.products__item--bg-3 .product__button {
+  background-color: #efc84a;
+}
+
+.products__item--bg-3 .product__button:hover {
+  background-color: #eab534;
+}
+
+.products__item--bg-3 .product__button:active {
+  background-color: #e5a722;
+  border-top-color: #ce961f;
+}
+
+.product__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.products__title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+/* О нас */
+
+.aboutus {
+  border-bottom: 2px solid #eeeeee;
+}
+
+.aboutus__slogan {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.aboutus__subtitle {
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.aboutus__statistics {
+  padding-top: 240px;
+  background-image: url("../img/nerds-illustration.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 360px auto;
+}
+
+.aboutus__thead td {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.aboutus__percent {
+  vertical-align: top;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+/* Наши работы */
+
+.our-works {
+  border-bottom: 2px solid #eeeeee;
+}
+
+.our-works__item a {
+  opacity: 0.2;
+}
+
+.our-works__item a:hover {
+  opacity: 1;
+}
+
+.our-works__item a:active {
+  opacity: 0.1;
+}
+
+/* Контакты */
+
+.contacts__title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.contacts__text a {
+  color: inherit;
+}
+
+.contacts__button {
+  background-color: #fb565a;
+}
+
+.contacts__button:hover {
+  background-color: #e74246;
+}
+
+.contacts__button:active {
+  background-color: #d7373b;
+  border-top-color: #c13135;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Социальные сети */
+
+.social__link {
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-color: #e1e1e1;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.social__link--vk {
+  background-image: url("../img/vk-icon.svg");
+  background-size: 26px auto;
+}
+
+.social__link--fb {
+  background-image: url("../img/fb-icon.svg");
+  background-size: 12px auto;
+}
+
+.social__link--inst {
+  background-image: url("../img/insta-icon.svg");
+  background-size: 21px auto;
+}
+
+.social__link:hover {
+  background-color: #e74246;
+}
+
+.social__link:active {
+  background-color: #d7373b;
+}
+
+.social__text b {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+/* Модальное окно */
+
+.modal {
+  background-color: #ffffff;
+}
+
+.modal__title {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.modal-form__label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.modal-form__button {
+  background-color: #fb565a;
+}
+
+.modal-form__button:hover {
+  background-color: #e74246;
+}
+
+.modal-form__button:active {
+  background-color: #d7373b;
+  border-top-color: #c13135;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.modal__button {
+  display: inline-block;
+  vertical-align: middle;
+  width: 21px;
+  height: 21px;
+  opacity: 0.3;
+  border: none;
+  border-color: transparent;
+  background-image: url("../img/close-cross.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.modal__button:hover {
+  opacity: 1;
+}
+
+.modal__button:active {
+  opacity: 0.1;
+}
+
+.modal-form__field {
+  background-color: #ffffff;
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+  box-shadow: none;
+  font-family: inherit;
+  color: inherit;
+  text-align: center;
+}
+
+.modal-form__field:hover {
+  border-color: #b4b9bb;
+}
+
+.modal-form__field:focus {
+  border-color: #000000;
+  outline: none;
+}
+
+/* Фильтры */
+
+.form-filter__group {
+  border: none;
+}
+
+.form-filter__title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.form-filter__slider {
+  background-color: #eeeeee;
+}
+
+.filters__option {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #283136;
+}
+
+.form-filter__button {
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+.form-filter__button:hover {
+  background-color: #dfdfdf;
+}
+
+.form-filter__button:active {
+  border-top-color: #bfbfbf;
+  background-color: #d5d5d5;
+  color:#a8a8a8;
+}
+
+.interval-slider__wrapper {
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.interval-slider__wrapper input {
+  background-color: #eeeeee;
+  border: 2px solid #eeeeee;
+  border-radius: 3px;
+  box-shadow: none;
+  font-family: inherit;
+  color: inherit;
+  text-align: center;
+}
+
+.interval-slider__wrapper input:hover {
+  opacity: 0.6;
+}
+
+.interval-slider__wrapper input:focus {
+  background-color: #ffffff;
+  opacity: 1;
+  outline: none;
+}
+
+/* Сортировка */
+
+.sorting__tile {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.sorting__button {
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 11px auto;
+  background-position: center center;
+  color: #000000;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+
+.sorting__button:not(.sorting__button--current):hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.sorting__button--current,
+.sorting__button:not(.sorting__button--current):active {
+  opacity: 1;
+}
+
+.sorting__button--bottom {
+  width: 11px;
+  height: 10px;
+  background-image: url("../img/icon-down-dir.svg");
+}
+
+.sorting__button--top {
+  width: 11px;
+  height: 10px;
+  background-image: url("../img/icon-up-dir.svg");
+}
+
+/* Каталог */
+
+.card__name {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.card__text {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.card__hover {
+  background-color: #eeeeee;
+}
+
+.card__price {
+  background-color: #fb565a;
+}
+
+.card__price:hover {
+  background-color: #e74246;
+}
+
+.card__price:active {
+  background-color: #d7373b;
+  border-top-color: #c13135;
+}
+
+/* Пагинация */
+
+.pagination__item a {
+  background-color: #eeeeee;
+  border: 3px solid #eeeeee;
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.pagination__item:not(.pagination__item--current) a:hover {
+  background-color: #dfdfdf;
+  cursor: pointer;
+  border-color: #dfdfdf;
+}
+
+.pagination__item:not(.pagination__item--current) a:active {
+  color: #bfbfbf;
+  border-top-color: #bfbfbf;
+}
+
+.pagination__item--current a {
+  background-color: transparent;
+  border-color: #dbdbdb;
+}

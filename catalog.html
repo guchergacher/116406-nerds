@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -10,24 +12,24 @@
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
       </a>
       <nav class="header__nav nav">
-        <ul class="nav__list">
+        <ul class="nav__list list-unstyled">
           <li class="nav__item">
-            <a class="nav__link" href="studio.html">Студия</a>
+            <a class="nav__link nav-link" href="studio.html">Студия</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="custom.html">Клиенты</a>
+            <a class="nav__link nav-link" href="custom.html">Клиенты</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link nav__link--current">Магазин</a>
+            <a class="nav__link nav-link nav-link--current">Магазин</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="contacts.html">Контакты</a>
+            <a class="nav__link nav-link" href="contacts.html">Контакты</a>
           </li>
         </ul>
       </nav>
-      <ul class="header__user-nav user-nav">
+      <ul class="header__user-nav user-nav list-unstyled">
         <li class="user-nav__item">
-          <a class="user-nav__link" href="card.html">Корзина</a>
+          <a class="user-nav__link nav-link" href="card.html">Корзина</a>
         </li>
       </ul>
     </header>
@@ -62,7 +64,7 @@
           </fieldset>
           <fieldset class="form-filter__group">
             <legend class="form-filter__title">Сетка:</legend>
-            <ul>
+            <ul class="list-unstyled">
               <li class="filters__option">
                 <input class="visually-hidden form-filter__field form-filter__field--radio" id="filters-adaptive" type="radio" name="product-group" value="adaptive" checked>
                 <label for="filters-adaptive">Адаптивная</label>
@@ -79,7 +81,7 @@
           </fieldset>
           <fieldset class="form-filter__group">
             <legend class="form-filter__title">Особенности:</legend>
-            <ul>
+            <ul class="list-unstyled">
               <li class="filters__option">
                 <input class="visually-hidden form-filter__field form-filter__field--checkbox" id="filters-slayder" type="checkbox" name="slayder" checked>
                 <label for="filters-slayder">Cлайдер</label>
@@ -106,8 +108,8 @@
         </form>
       </section>
       <section class="sorting">
-        <h2 class="sorting__tile">Сортировать</h2>
-        <ul class="sorting__list">
+        <h2 class="sorting__tile">Сортировать:</h2>
+        <ul class="sorting__list list-unstyled">
           <li class="sorting__item">
             <button class="sorting__button sorting__button--current" type="button">По цене</button>
           </li>
@@ -118,7 +120,7 @@
             <button class="sorting__button" type="button">По названию</button>
           </li>
           <li class="sorting__item">
-            <button class="sorting__button sorting__button--bottom" type="button">
+            <button class="sorting__button sorting__button--bottom sorting__button--current" type="button">
               <span class="visually-hidden">По убыванию</span>
             </button>
           </li>
@@ -130,7 +132,7 @@
         </ul>
       </section>
       <section class="goods">
-        <ul class="goods__list">
+        <ul class="goods__list list-unstyled">
           <li class="goods__item card">
             <img class="card__image" src="img/img-sedona.jpg" width="360" height="576" alt="Седона">
             <div class="card__hover">
@@ -162,7 +164,7 @@
             </div>
           </li>
           <li class="goods__item card">
-            <img class="card__image" src="img/img-mishka" width="360" height="576" alt="Мишка">
+            <img class="card__image" src="img/img-mishka.jpg" width="360" height="576" alt="Мишка">
             <div class="card__hover">
               <a href="catalog-item.html">
                 <h3 class="card__name">Mishka</h3>
@@ -182,7 +184,7 @@
             </div>
           </li>
           <li class="goods__item card">
-            <img class="card__image" src="img/img-aplus.jpg" width="360" height="576" alt="Кваст">
+            <img class="card__image" src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
             <div class="card__hover">
               <a href="catalog-item.html">
                 <h3 class="card__name">Кваст</h3>
@@ -192,11 +194,19 @@
             </div>
           </li>
         </ul>
-        <ul class="goods__pagination pagination">
-          <li class="pagination__item pagination__item--current">1<li>
-          <li class="pagination__item"><a href="#">2</a><li>
-          <li class="pagination__item"><a href="#">3</a><li>
-          <li class="pagination__item pagination__item--next"><a href="#">Следующая</a><li>
+        <ul class="goods__pagination pagination list-unstyled">
+          <li class="pagination__item pagination__item--current">
+            <a>1</a>
+          </li>
+          <li class="pagination__item">
+            <a href="#">2</a>
+          </li>
+          <li class="pagination__item">
+            <a href="#">3</a>
+          </li>
+          <li class="pagination__item pagination__item--next">
+            <a href="#">Следующая</a>
+          </li>
         </ul>
       </section>
     </main>
@@ -213,7 +223,7 @@
       </section>
       <section class="social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <ul class="social__buttons social">
+        <ul class="social__buttons social list-unstyled">
           <li class="social__item">
             <a class="social__link social__link--vk" href="#" target="_blank">
               <span class="visually-hidden">Вконтакте</span>
@@ -239,7 +249,7 @@
     <div class="modal" tabindex="-1">
       <h2 class="modal__title">Напишите нам</h2>
       <form class="modal__form modal-form" method="post" action="https://echo.htmlacademy.ru">
-        <ul class="modal-form__list">
+        <ul class="modal-form__list list-unstyled">
           <li>
             <label class="modal-form__label" for="user-name">Ваше имя:</label>
             <input class="modal-form__field" id="user-name" type="text" name="user-name" placeholder="Имя Фамилия" required>
@@ -253,7 +263,7 @@
             <textarea class="modal-form__field" id="user-text" name="user-text" rows="3" placeholder="В свободной форме"></textarea>
           </li>
         </ul>
-        <button class="modal-form__button" type="submit">Отправить</button>
+        <button class="modal-form__button button" type="submit">Отправить</button>
       </form>
       <button class="modal__button" type="button">
         <span class="visually-hidden">Закрыть окно</span>
