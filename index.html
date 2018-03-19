@@ -8,171 +8,189 @@
   </head>
   <body>
     <header class="header">
-      <a class="header__logo-link">
-        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
-      </a>
-      <nav class="header__nav nav">
-        <ul class="nav__list  list-unstyled">
-          <li class="nav__item">
-            <a class="nav__link nav-link" href="studio.html">Студия</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link nav-link" href="custom.html">Клиенты</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link nav-link" href="catalog.html">Магазин</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link nav-link" href="contacts.html">Контакты</a>
+      <div class="header__container container">
+        <a class="header__logo-link">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
+        </a>
+        <nav class="header__nav nav">
+          <ul class="nav__list  list-unstyled">
+            <li class="nav__item">
+              <a class="nav__link nav-link" href="studio.html">Студия</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav-link" href="custom.html">Клиенты</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav-link" href="catalog.html">Магазин</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav-link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__user-nav user-nav list-unstyled">
+          <li class="user-nav__item">
+            <a class="user-nav__link nav-link" href="card.html">Корзина</a>
           </li>
         </ul>
-      </nav>
-      <ul class="header__user-nav user-nav list-unstyled">
-        <li class="user-nav__item">
-          <a class="user-nav__link nav-link" href="card.html">Корзина</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main class="content">
       <h1 class="visually-hidden">Веб студиа Нёрдс</h1>
       <section class="slider">
         <h2 class="visually-hidden">Как мы роботаем</h2>
-        <ul class="slider__list list-unstyled">
-          <li class="slider__item slider__item--bg-1">
-            <h3 class="slider__title">Долго, дорого,  скрупулезно.</h3>
-            <p class="slider__text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a class="slider__button button" href="learn-more.html">Узнать больше</a>
-          </li>
-          <li class="slider__item slider__item--bg-2">
-            <h3 class="slider__title">Любим математику как никто другой</h3>
-            <p class="slider__text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-            <a class="slider__button button" href="learn-more.html">Узнать больше</a>
-          </li>
-          <li class="slider__item slider__item--bg-3">
-            <h3 class="slider__title">Только ночь, только хардкор</h3>
-            <p class="slider__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a class="slider__button button" href="learn-more.html">Узнать больше</a>
-          </li>
-        </ul>
-        <div class="slider__buttons">
-          <button class="slider__button-control slider__button-control--current" type="button">
-            <span class="visually-hidden">Слайд 1</span>
-          </button>
-          <button class="slider__button-control" type="button">
-            <span class="visually-hidden">Слайд 2</span>
-          </button>
-          <button class="slider__button-control" type="button">
-            <span class="visually-hidden">Слайд 3</span>
-          </button>
-        </div>
-      </section>
-      <section class="products">
-        <h2 class="visually-hidden">Продукты</h2>
-        <ul class="products__list list-unstyled">
-          <li class="products__item products__item--bg-1">
-            <h3 class="products__title">Веб-сайты</h3>
-            <p class="product__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a class="product__button button" href="catalog.html">Заказать</a>
-          </li>
-          <li class="products__item products__item--bg-2">
-            <h3 class="products__title">Приложения</h3>
-            <p class="product__text">Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a class="product__button button" href="catalog.html">Заказать</a>
-          </li>
-          <li class="products__item products__item--bg-3">
-            <h3 class="products__title">Презентации</h3>
-            <p class="product__text">Вы даже не подозреваете,насколько вы изумительны!</p>
-            <a class="product__button button" href="catalog.html">Заказать</a>
-          </li>
-        </ul>
-      </section>
-      <section class="aboutus">
-        <h2 class="visually-hidden">О нас</h2>
-        <div class="aboutus__info">
-          <b class="aboutus__slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
-          <p class="aboutus__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-          <b class="aboutus__orders aboutus__subtitle">Выполняем заказы на разработку:</b>
-          <ul class="aboutus__orders-list list-unstyled">
-            <li>Веб-сайтов любой сложности</li>
-            <li>Мобильных приложений для iOS и Android</li>
-            <li>Слайдшоу и видео для корпоративных презентаций</li>
+        <div class="container">
+          <ul class="slider__list list-unstyled">
+            <li class="slider__item slider__item--bg-1">
+              <div class="slider__item-wrapper">
+                <h3 class="slider__title">Долго, дорого,  скрупулезно.</h3>
+                <p class="slider__text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                <a class="slider__button button" href="learn-more.html">Узнать больше</a>
+              </div>
+            </li>
+            <li class="slider__item slider__item--bg-2 visually-hidden">
+              <div class="slider__item-wrapper">
+                <h3 class="slider__title">Любим математику как никто другой</h3>
+                <p class="slider__text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                <a class="slider__button button" href="learn-more.html">Узнать больше</a>
+              </div>
+            </li>
+            <li class="slider__item slider__item--bg-3 visually-hidden">
+              <div class="slider__item-wrapper">
+                <h3 class="slider__title">Только ночь, только хардкор</h3>
+                <p class="slider__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                <a class="slider__button button" href="learn-more.html">Узнать больше</a>
+              </div>
+            </li>
           </ul>
-        </div>
-        <div class="aboutus__statistics">
-          <b class="aboutus__history aboutus__subtitle">с 2004 года Любим точность во всем:</b>
-          <table class="aboutus__table">
-            <tr class="aboutus__thead">
-              <td>146<span class="aboutus__percent">%</span></td>
-              <td>100<span class="aboutus__percent">%</span></td>
-              <td>50<span class="aboutus__percent">%</span></td>
-            </tr>
-            <tr class="aboutus__tbody">
-              <td>Уровень самоотдачи</td>
-              <td>Соблюдение  сроков</td>
-              <td>Минимальная предоплата</td>
-            </tr>
-          </table>
+          <div class="slider__buttons">
+            <button class="slider__button-control slider__button-control--current" type="button">
+              <span class="visually-hidden">Слайд 1</span>
+            </button>
+            <button class="slider__button-control" type="button">
+              <span class="visually-hidden">Слайд 2</span>
+            </button>
+            <button class="slider__button-control" type="button">
+              <span class="visually-hidden">Слайд 3</span>
+            </button>
+          </div>
         </div>
       </section>
-      <section class="our-works">
-        <h2 class="visually-hidden">Наши работы</h2>
-        <ul class="our-works__list list-unstyled">
-          <li class="our-works__item">
-            <a href="catalog-item.html">
-              <img src="img/logo-1.png" width="260" height="180" alt="Логотип Академии">
-            </a>
-          </li>
-          <li class="our-works__item">
-            <a href="catalog-item.html">
-              <img src="img/logo-2.png" width="260" height="180" alt="Логотип Барбершопа">
-            </a>
-          </li>
-          <li class="our-works__item">
-            <a href="catalog-item.html">
-              <img src="img/logo-3.png" width="260" height="180" alt="Логотип Пинк">
-            </a>
-          </li>
-          <li class="our-works__item">
-            <a href="catalog-item.html">
-              <img src="img/logo-4.png" width="260" height="180" alt="Логотип Мишка">
-            </a>
-          </li>
-        </ul>
-      </section>
+      <div class="container">
+        <section class="products">
+          <h2 class="visually-hidden">Продукты</h2>
+          <ul class="products__list list-unstyled">
+            <li class="products__item products__item--bg-1">
+              <h3 class="products__title">Веб-сайты</h3>
+              <p class="product__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+              <a class="product__button button" href="catalog.html">Заказать</a>
+            </li>
+            <li class="products__item products__item--bg-2">
+              <h3 class="products__title">Приложения</h3>
+              <p class="product__text">Покорите топ-10 приложений в AppStore и Google Play</p>
+              <a class="product__button button" href="catalog.html">Заказать</a>
+            </li>
+            <li class="products__item products__item--bg-3">
+              <h3 class="products__title">Презентации</h3>
+              <p class="product__text">Вы даже не подозреваете,насколько вы изумительны!</p>
+              <a class="product__button button" href="catalog.html">Заказать</a>
+            </li>
+          </ul>
+        </section>
+        <section class="aboutus">
+          <h2 class="visually-hidden">О нас</h2>
+          <div class="aboutus__wrapper">
+            <div class="aboutus__info">
+              <b class="aboutus__slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+              <p class="aboutus__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+              <b class="aboutus__orders aboutus__subtitle">Выполняем заказы на разработку:</b>
+              <ul class="aboutus__orders-list list-unstyled">
+                <li>Веб-сайтов любой сложности</li>
+                <li>Мобильных приложений для iOS и Android</li>
+                <li>Слайдшоу и видео для корпоративных презентаций</li>
+              </ul>
+            </div>
+            <div class="aboutus__statistics">
+              <b class="aboutus__history aboutus__subtitle">с 2004 года Любим точность во всем:</b>
+              <table class="aboutus__table">
+                <tr class="aboutus__thead">
+                  <td>146<span class="aboutus__percent">%</span></td>
+                  <td>100<span class="aboutus__percent">%</span></td>
+                  <td>50<span class="aboutus__percent">%</span></td>
+                </tr>
+                <tr class="aboutus__tbody">
+                  <td>Уровень самоотдачи</td>
+                  <td>Соблюдение  сроков</td>
+                  <td>Минимальная предоплата</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </section>
+        <section class="our-works">
+          <h2 class="visually-hidden">Наши работы</h2>
+          <ul class="our-works__list list-unstyled">
+            <li class="our-works__item">
+              <a href="catalog-item.html">
+                <img src="img/logo-1.png" width="260" height="180" alt="Логотип Академии">
+              </a>
+            </li>
+            <li class="our-works__item">
+              <a href="catalog-item.html">
+                <img src="img/logo-2.png" width="260" height="180" alt="Логотип Барбершопа">
+              </a>
+            </li>
+            <li class="our-works__item">
+              <a href="catalog-item.html">
+                <img src="img/logo-3.png" width="260" height="180" alt="Логотип Пинк">
+              </a>
+            </li>
+            <li class="our-works__item">
+              <a href="catalog-item.html">
+                <img src="img/logo-4.png" width="260" height="180" alt="Логотип Мишка">
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
     <footer class="footer">
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <img class="contacts__map" src="img/map.jpg" width="1440" height="416" alt="Карта">
-        <div class="contacts__address">
-          <h3 class="contacts__title">Nёrds design studio</h3>
-          <p class="contacts__text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p class="contacts__text"><a href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
-          <button class="contacts__button button" type="button">Напишите нам</button>
+        <div class="container">
+          <div class="contacts__address">
+            <h3 class="contacts__title">Nёrds design studio</h3>
+            <p class="contacts__text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <p class="contacts__text"><a href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
+            <button class="contacts__button button" type="button">Напишите нам</button>
+          </div>
         </div>
       </section>
       <section class="social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <ul class="social__buttons social list-unstyled">
-          <li class="social__item">
-            <a class="social__link social__link--vk" href="#" target="_blank">
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--fb" href="#" target="_blank">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--inst" href="#" target="_blank">
-              <span class="visually-hidden">Instagramm</span>
-            </a>
-          </li>
-        </ul>
-        <div class="social__text">
-          <b>Давайте дружить, это выгодно!</b>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
+        <div class="container social__wrapper">
+          <ul class="social__buttons social list-unstyled">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="#" target="_blank">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--fb" href="#" target="_blank">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--inst" href="#" target="_blank">
+                <span class="visually-hidden">Instagramm</span>
+              </a>
+            </li>
+          </ul>
+          <div class="social__text">
+            <b>Давайте дружить, это выгодно!</b>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+          </div>
         </div>
       </section>
     </footer>

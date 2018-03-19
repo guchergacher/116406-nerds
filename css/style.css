@@ -106,10 +106,29 @@ img {
   cursor: pointer;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 /* Шапка */
 
 .header {
   background-color: #eeeeee;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav {
+  width: 640px;
+}
+
+.header__user-nav {
+  width: 135px;
 }
 
 .header__logo-link:hover {
@@ -122,13 +141,25 @@ img {
 
 /* Контент */
 
+.content__title-wrapper {
+  background-color: #eeeeee;
+}
+
 .content__title {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
   color: #000000;
-  background-color: #eeeeee;
   text-align: center;
+}
+
+.content__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__group-wrapper {
+  width: 760px;
 }
 
 /* Слайдер */
@@ -141,6 +172,10 @@ img {
   background-repeat: no-repeat;
   background-position: right center;
   background-size: 760px auto;
+}
+
+.slider__item-wrapper {
+  width: 400px;
 }
 
 .slider__item--bg-1 {
@@ -156,6 +191,7 @@ img {
 }
 
 .slider__title {
+  margin-top: 0;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -204,6 +240,15 @@ img {
 
 .products {
   border-bottom: 2px solid #eeeeee;
+}
+
+.products__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.products__item {
+  width: 300px;
 }
 
 .products__item::before {
@@ -287,6 +332,15 @@ img {
   border-bottom: 2px solid #eeeeee;
 }
 
+.aboutus__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutus__info {
+  width: 680px;
+}
+
 .aboutus__slogan {
   font-size: 45px;
   line-height: 45px;
@@ -301,6 +355,7 @@ img {
 }
 
 .aboutus__statistics {
+  width: 400px;
   padding-top: 240px;
   background-image: url("../img/nerds-illustration.png");
   background-repeat: no-repeat;
@@ -327,6 +382,11 @@ img {
   border-bottom: 2px solid #eeeeee;
 }
 
+.our-works__list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .our-works__item a {
   opacity: 0.2;
 }
@@ -340,6 +400,17 @@ img {
 }
 
 /* Контакты */
+
+.contacts__map {
+  width: 100%;
+  height: auto;
+}
+
+.contacts__address {
+  width: 320px;
+  padding: 20px 50px;
+  background-color: #ffffff;
+}
 
 .contacts__title {
   font-size: 18px;
@@ -368,6 +439,15 @@ img {
 }
 
 /* Социальные сети */
+
+.social__wrapper {
+  display: flex;
+}
+
+.social__buttons {
+  width: 380px;
+  margin-right: 20px;
+}
 
 .social__link {
   display: block;
@@ -402,6 +482,10 @@ img {
   background-color: #d7373b;
 }
 
+.social__text {
+  width: 600px;
+}
+
 .social__text b {
   font-size: 36px;
   line-height: 36px;
@@ -412,6 +496,9 @@ img {
 /* Модальное окно */
 
 .modal {
+  display: none;
+  width: 960px;
+  padding: 30px 100px;
   background-color: #ffffff;
 }
 
@@ -485,6 +572,10 @@ img {
 }
 
 /* Фильтры */
+
+.filters__form {
+  width: 260px;
+}
 
 .form-filter__group {
   border: none;
@@ -595,6 +686,16 @@ img {
 }
 
 /* Каталог */
+
+.goods__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.goods__item {
+  width: 360px;
+}
 
 .card__name {
   font-size: 18px;
