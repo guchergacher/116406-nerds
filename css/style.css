@@ -94,7 +94,7 @@ img {
 
 .button {
   display: inline-block;
-  align-items: center;
+  vertical-align: center;
   padding: 14px 10px 15px;
   border: none;
   border-top: 3px solid transparent;
@@ -118,6 +118,10 @@ img {
 
 .modal-open {
   overflow: hidden;
+}
+
+.no-js {
+  display: none;
 }
 
 /* Шапка */
@@ -494,37 +498,37 @@ img {
   line-height: 28px;
 }
 
-/* Наши работы */
+/* Партнёры */
 
-.our-works {
+.partners {
   margin-bottom: 80px;
   border-bottom: 2px solid #eeeeee;
 }
 
-.our-works__list {
+.partners__list {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -20px;
 }
 
-.our-works__item {
+.partners__item {
   margin: 0 20px;
 }
 
-.our-works__item img,
-.our-works__item a {
+.partners__item img,
+.partners__item a {
   display: block;
 }
 
-.our-works__item a {
+.partners__item a {
   opacity: 0.2;
 }
 
-.our-works__item a:hover {
+.partners__item a:hover {
   opacity: 1;
 }
 
-.our-works__item a:active {
+.partners__item a:active {
   opacity: 0.1;
 }
 
@@ -832,6 +836,7 @@ img {
 
 .card__hover a {
   display: inline-block;
+  vertical-align: baseline;
   margin: 0 0 15px;
 }
 
@@ -932,20 +937,27 @@ img {
   padding-top: 54px;
 }
 
-.contacts__map-wrapper {
+.contacts__map {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: -1;
 }
 
-.contacts__map {
+.contacts__map > iframe {
+  width: 100%;
+  border: 0;
+}
+
+.contacts__map-link,
+.contacts__map-link > img {
+  display: block;
   width: 100%;
 }
 
 .contacts__address {
+  position: relative;
   width: 320px;
   padding: 50px 50px 46px;
   background-color: #ffffff;
