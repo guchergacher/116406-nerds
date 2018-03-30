@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -41,36 +41,36 @@
         <h2 class="visually-hidden">Как мы роботаем</h2>
         <div class="container">
           <ul class="slider__list list-unstyled">
-            <li class="slider__item slider__item--bg-1">
+            <li class="slider__item slider__item--bg-1 slider__item--show">
               <div class="slider__item-wrapper">
                 <h3 class="slider__title">Долго, дорого,  скрупулезно.</h3>
-                <p class="slider__text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                <p class="slider__text">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
                 <a class="slider__button button" href="learn-more.html">Узнать больше</a>
               </div>
             </li>
-            <li class="slider__item slider__item--bg-2 visually-hidden">
+            <li class="slider__item slider__item--bg-2">
               <div class="slider__item-wrapper">
                 <h3 class="slider__title">Любим математику как никто другой</h3>
-                <p class="slider__text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                <p class="slider__text">Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.</p>
                 <a class="slider__button button" href="learn-more.html">Узнать больше</a>
               </div>
             </li>
-            <li class="slider__item slider__item--bg-3 visually-hidden">
+            <li class="slider__item slider__item--bg-3">
               <div class="slider__item-wrapper">
-                <h3 class="slider__title">Только ночь, только хардкор</h3>
-                <p class="slider__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                <h3 class="slider__title">Только ночь,<br>только хардкор</h3>
+                <p class="slider__text">Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
                 <a class="slider__button button" href="learn-more.html">Узнать больше</a>
               </div>
             </li>
           </ul>
           <div class="slider__buttons">
-            <button class="slider__button-control slider__button-control--current" type="button">
+            <button class="slider__button-control slider__button-control--current" data-value="1" type="button">
               <span class="visually-hidden">Слайд 1</span>
             </button>
-            <button class="slider__button-control" type="button">
+            <button class="slider__button-control" data-value="2" type="button">
               <span class="visually-hidden">Слайд 2</span>
             </button>
-            <button class="slider__button-control" type="button">
+            <button class="slider__button-control" data-value="3" type="button">
               <span class="visually-hidden">Слайд 3</span>
             </button>
           </div>
@@ -224,6 +224,6 @@
         </button>
       </div>
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

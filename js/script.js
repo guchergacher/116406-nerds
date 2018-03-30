@@ -4,8 +4,40 @@ var modal = body.querySelector('.modal');
 var modalButtonClose = modal.querySelector('.modal__button');
 var modalForm = modal.querySelector('.modal-form');
 var modalFieldAll = modalForm.querySelectorAll('.modal-form__field');
+var noJs = body.querySelector('.no-js');
+var map = body.querySelector('.contacts__map-link');
+var sliderButton = body.querySelector('.slider__buttons');
 
 var storage = localStorage;
+
+noJs.classList.remove('no-js');
+map.classList.add('contacts__map-link--hide');
+
+if (sliderButton) {
+  
+  sliderButton.addEventListener('click', function (evt) {
+
+    var target = evt.target;
+
+    if (target.classList.contains('slider__button-control--current') || !target.classList.contains('slider__button-control')) {
+      return false;
+    }
+
+    var buttonCurrent = body.querySelector('.slider__button-control--current');
+    var sliderItem = body.querySelector('.slider__item--show');
+
+    var dataValue = target.getAttribute('data-value');
+    var currentItem = body.querySelector('.slider__item--bg-' + dataValue);
+
+    target.classList.add('slider__button-control--current');
+    buttonCurrent.classList.remove('slider__button-control--current');
+
+    sliderItem.classList.remove('slider__item--show');
+    currentItem.classList.add('slider__item--show');
+
+  });
+
+}
 
 modalButtonOpen.addEventListener('click', function (evt) {
 
