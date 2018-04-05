@@ -14,7 +14,7 @@ noJs.classList.remove('no-js');
 map.classList.add('contacts__map-link--hide');
 
 if (sliderButton) {
-  
+
   sliderButton.addEventListener('click', function (evt) {
 
     var target = evt.target;
@@ -106,16 +106,16 @@ modalForm.addEventListener('submit', function (evt) {
 
 });
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener('keydown', function (evt) {
 
   if (evt.keyCode === 27) {
 
     evt.preventDefault();
 
-    if (modal.classList.contains("modal--open")) {
+    if (modal.classList.contains('modal--open')) {
 
-      body.classList.remove("modal-open");
-      modal.classList.remove("modal--open");
+      body.classList.remove('modal-open');
+      modal.classList.remove('modal--open');
 
       for (var i = 0; i < modalFieldAll.length - 1; i++) {
         modalFieldAll[i].classList.remove('modal-form__field--invalid');
